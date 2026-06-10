@@ -1,0 +1,21 @@
+﻿@{
+    ViewData["Title"] = "Home";
+}
+
+<h1>Witaj w MemeMatch!</h1>
+
+<p>
+    Dopasuj, oceniaj i baw się dobrze w najlepszej grze o memach!😄
+</p>
+
+<br />
+
+
+<div class="d-flex flex-column align-items-center gap-4 mt-5">
+
+    <form asp-controller="Game" asp-action="StartNewGame" method="post">
+        <button type="submit" class="btn btn-primary btn-lg px-5">
+            Rozpocznij nową grę
+        </button>
+    </form>
+</div>

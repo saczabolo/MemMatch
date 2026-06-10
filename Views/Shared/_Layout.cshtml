@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - MemeMatch</title>
+
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/MemeMatch.styles.css" asp-append-version="true" />
+</head>
+<body>
+
+    <div class="mm-navbar">
+        <a asp-controller="Home" asp-action="Index" class="logo">MemeMatch</a>
+
+        <div class="mm-nav-links">
+            <a asp-controller="Home" asp-action="Index">Home</a>
+            <a asp-controller="Memes" asp-action="Index">Memy</a>
+            <a asp-controller="MemeMgmt" asp-action="Index">Dodaj memika</a>
+        </div>
+    </div>
+
+    <main class="mm-container">
+        @RenderBody()
+    </main>
+
+    <footer class="mm-footer">
+        © 2026 MemeMatch
+    </footer>
+
+</body>
+</html>
